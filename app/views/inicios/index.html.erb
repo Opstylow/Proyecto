@@ -1,30 +1,50 @@
-<p id="notice"><%= notice %></p>
+<div class="page-body">
+<h1> ¿Que es Translation Comunity Source?</h1>
+<h3>Como bien se sabe los traductores almacenados en la web, presentan muchas fallas en
 
-<h1>Bienvenidos</h1>
+su funcionamiento. Esto se debe básicamente a que la traducción de un idioma consta de
 
-<table>
-  <thead>
-    <tr>
-      <th>Usuario</th>
-      <th>Contrasena</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+dos fases, la de traducción y de interpretación, por lo cual los traductores automáticos que
 
-  <tbody>
-    <% @inicios.each do |inicio| %>
-      <tr>
-        <td><%= inicio.usuario %></td>
-        <td><%= inicio.contrasena %></td>
-        <td><%= link_to 'Show', inicio %></td>
-        <td><%= link_to 'Edit', edit_inicio_path(inicio) %></td>
-        <td><%= link_to 'Destroy', inicio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+están disponibles fallan en la parte de interpretación, que es una habilidad la cual requiere
 
-<br>
+de raciocinio humano que no se ha podido reflejar en algoritmos de programación. Además
 
-<%= link_to 'Registrarse', new_inicio_path %>
-<%= link_to 'Olvido su Contraseña?', new_inicio_path %>
+de la gran cantidad de modismos humanos existentes en todo el mundo, muchos de estos
+
+modismos no están incluidos en los diccionarios de lenguas con los que suelen trabajar los
+
+traductores.
+
+En internet es difícil encontrar sitios donde se pueda lograr la traducción de un
+
+archivo multimedia sin tener que realizar pagos. Con esta plataforma puede llegar a ser
+
+posible traducir desde PDF’s, archivos de audio (canciones, diálogos, discursos, etc) o
+
+imágenes.
+
+
+</h3>
+
+<%= image_tag('inicio1.png',style: "width: 700px") %>
+
+<h1>¿Cual es nuestra Finalidad?</h1>
+<h3>La plataforma puede ser capaz de generar mucho contenido y ampliar una comunidad
+
+de hablantes de diferentes lenguas a lo largo del mundo. Se sabe que hoy en día existe
+
+mucho flujo migratorio por motivos laborales o de estudio, esto provoca que mucha
+
+población habite en países donde no se maneja la lengua nativa, con lo cual esta plataforma
+
+puede hacer más rápido el efecto de adaptación a una cultura y lengua diferente. Además de
+
+servir como una herramienta para gente que quiera aprender más sobre un determinado
+
+idioma o practicar la traducción de textos poniendo a prueba sus conocimientos; y de
+
+empresas que busquen traductores para un determinado documento.
+</h3>
+<%= image_tag('inicio2.jpg',style: "width: 800px") %>
+</div>
