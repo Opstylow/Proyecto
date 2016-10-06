@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bienvenidos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Contrasena</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inicios.each do |inicio| %>
+      <tr>
+        <td><%= inicio.usuario %></td>
+        <td><%= inicio.contrasena %></td>
+        <td><%= link_to 'Show', inicio %></td>
+        <td><%= link_to 'Edit', edit_inicio_path(inicio) %></td>
+        <td><%= link_to 'Destroy', inicio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrarse', new_inicio_path %>
+<%= link_to 'Olvido su Contraseña?', new_inicio_path %>
